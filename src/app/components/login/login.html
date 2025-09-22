@@ -1,0 +1,38 @@
+<!-- Ocupa toda la altura visible y centra el contenido -->
+<div class="min-h-screen grid place-items-center px-4">
+  <!-- Tarjeta de login -->
+  <div class="w-full max-w-lg bg-amber-50/30 backdrop-blur-md pading p-7 rounded-4xl">
+    <h1 class="text-4xl font-semibold text-center mb-10">Login</h1>
+
+    <form class="space-y-10">
+      <div class="flex">
+        <img src="/img/user.png" alt="" class="h-10 w-10 mr-4" aria-hidden="true" />
+        <input
+          id="Username"
+          type="Username"
+          placeholder="Username"
+          class="w-full rounded-lg border border-neutral-300 bg-white/30 px-3 py-3 outline-none
+                 focus:ring-2 focus:ring-white placeholder-black/50"
+        />
+      </div>
+
+      <div class="flex">
+        <img src="/img/padlock.png" alt="" class="h-10 w-10 mr-4" aria-hidden="true" />
+        <input
+          id="password"
+          type="password"
+          placeholder="Password"
+          class="w-full rounded-lg border border-neutral-300 bg-white/30 px-3 py-3 outline-none
+                 focus:ring-2 focus:ring-white placeholder-black/50"
+        />
+      </div>
+
+      <button
+        type="submit"
+        [routerLink]="['/lobby']"
+        class="w-full rounded-lg py-4 font-bold text-xl bg-sky-600 text-white shadow hover:shadow-md transition">
+        Sign in
+      </button>
+    </form>
+  </div>
+</div>
